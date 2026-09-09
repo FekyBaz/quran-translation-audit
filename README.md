@@ -70,6 +70,19 @@ plus in-range neighbours as controls. Re-check of the 26 files from
 `060_002_007`, `079_001_002`, `098_007_001` — including the most visible
 ones (98:7 first word, 79:1 one of two words).
 
+## Round 4 — Hausa Gumi (#32): entity-escaping inconsistency + one paren
+
+- **1,925 of 6,236 verses serve raw `&quot;` entities** (31% of the
+  translation) where Maududi serves straight quotes and zero entities.
+  Browsers injecting via innerHTML render it fine, but every plaintext
+  API consumer (apps, researchers, kids'-education backends across West
+  Africa) displays literal `&quot;Ya mutãnena!`. Inconsistent with the
+  rest of the API — worth normalizing upstream.
+- **2:92 unclosed paren**: `…kuka riƙi maraƙi (daga bãyansa, alhãli
+  kuwa kuna mãsu zãlunci.` — no close, no cross-verse pairing.
+- Otherwise clean: lowercase continuations are this translation's
+  consistent style (not leaks), and no other bracket anomalies found.
+
 ## Reproduce any finding
 
 ```bash
