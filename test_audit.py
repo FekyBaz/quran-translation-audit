@@ -5,7 +5,7 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from audit import check_h1, check_h2
+from audit import check_h1, check_h2, check_h3_pagenum, check_h4_double_punct
 
 LEAK_3189 = ("To Allah belongs the dominion of the heavens and the earth; "
              "and Allah is All-Powerful. indeed been successful.")
@@ -45,6 +45,15 @@ class TestHeuristics(unittest.TestCase):
         # Well-formed footnote markers must not flag.
         self.assertEqual(
             check_h2('Joseph said:<sup foot_note="178470">1</sup> "Go."'), [])
+
+    def test_h3_pagenum_residue(self):
+        self.assertEqual(check_h3_pagenum("Omniscient 266]."), ["266]"])
+        self.assertEqual(check_h3_pagenum("normal [12] text."), [])
+
+    def test_h4_double_punct(self):
+        self.assertEqual(check_h4_double_punct("ces noms;."), [";."])
+        self.assertEqual(check_h4_double_punct("wait... then."), [])
+        self.assertEqual(check_h4_double_punct("end… then."), [])
 
     def test_h2_sup_tags_unquoted(self):
         # Some resources (e.g. French Hamidullah) omit attribute quotes.

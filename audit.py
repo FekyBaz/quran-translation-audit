@@ -56,6 +56,16 @@ def check_h1(text):
     return hits
 
 
+def check_h3_pagenum(text):
+    """Stray page/cross-reference residue like `Omniscient 266]`."""
+    return re.findall(r"(?<!\[)\b\d{2,4}\]", text)
+
+
+def check_h4_double_punct(text):
+    """Double punctuation like `;.` (excluding ellipsis)."""
+    return re.findall(r"(?<!\.)[;:,]\.(?!\.)", text)
+
+
 def check_h2(text):
     issues = []
     # Strip well-formed footnote markers first; whatever angle
@@ -89,9 +99,11 @@ def audit_resource(resource_id):
                 lengths.append((len(text), key))
                 h1 = check_h1(text)
                 h2 = check_h2(text)
-                if h1 or h2:
+                h3 = check_h3_pagenum(text)
+                h4 = check_h4_double_punct(text)
+                if h1 or h2 or h3 or h4:
                     findings.append({"verse": key, "h1": h1, "h2": h2,
-                                     "text": text})
+                                     "h3": h3, "h4": h4, "text": text})
             pages = data["pagination"]["total_pages"]
             if page >= pages:
                 break
