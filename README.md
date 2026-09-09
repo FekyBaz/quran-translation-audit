@@ -98,6 +98,15 @@ ones (98:7 first word, 79:1 one of two words).
   digits, H4 double punctuation): Maududi 170 findings (40 H1/H2 as
   before + 130 new-class, all accounted for), Russian still 0.
 
+## Round 6 — Rachid Maash French (#779): clean
+
+Full sweep of all 6,236 verses with the complete heuristic set (H1–H4):
+**zero findings** (coverage verified: 286/286 verses in Al-Baqarah carry
+the resource). Relevant to
+[quran_android#3618](https://github.com/quran/quran_android/issues/3618),
+which requests adding this translation to the Android app — the API-side
+data is clean, so the addition is de-risked from the data side.
+
 ## Reproduce any finding
 
 ```bash
