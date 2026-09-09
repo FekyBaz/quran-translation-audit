@@ -60,6 +60,16 @@ well-formed `<sup foot_note>` markers, which the API ships by design.
   [quran_android#3789](https://github.com/quran/quran_android/issues/3789)
   complaint concerns that app's own data pipeline, not this API's data.
 
+## Round 3 — word-by-word audio gaps (#3317)
+
+`check_wbw.py` re-verifies a list of `wbw/SSS_AAA_NNN.mp3` clips (HEAD)
+plus in-range neighbours as controls. Re-check of the 26 files from
+[#3317](https://github.com/quran/quran.com-frontend-next/issues/3317):
+**19 now return 200** (fixed upstream since the report); 7 still 404 —
+`008_066_002`, `012_008_015`, `018_049_020`, `018_054_007`,
+`060_002_007`, `079_001_002`, `098_007_001` — including the most visible
+ones (98:7 first word, 79:1 one of two words).
+
 ## Reproduce any finding
 
 ```bash
