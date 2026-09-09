@@ -16,9 +16,10 @@ import urllib.request
 
 API = "https://api.quran.com/api/v4"
 ABBR = {"e.g", "i.e", "st", "mr", "mrs", "dr", "vs", "no", "fig", "etc",
-        "al", "ibn", "bint"}
+        "al", "ibn", "bint", "т.е", "т.к", "г", "ст", "др", "пр", "см",
+        "напр", "им", "св"}
 
-SENT_END = re.compile(r"(?<=[.!?])\s+(?=[a-z])")
+SENT_END = re.compile(r"(?<=[.!?。۔])\s+(?=[a-zа-яё])")
 
 
 def fetch(url, retries=4):

@@ -26,6 +26,10 @@ class TestHeuristics(unittest.TestCase):
     def test_h1_ignores_abbreviations(self):
         self.assertEqual(check_h1("He said, e.g. this is fine."), [])
 
+    def test_h1_cyrillic(self):
+        self.assertTrue(check_h1("Воистину, Мы сделали это. ивыявить лучшее."))
+        self.assertEqual(check_h1("Сказал он, т.е. это пояснение."), [])
+
     def test_h2_balanced(self):
         self.assertEqual(check_h2("See (i.e. the fathers) here."), [])
 
