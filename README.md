@@ -107,14 +107,21 @@ the resource). Relevant to
 which requests adding this translation to the Android app — the API-side
 data is clean, so the addition is de-risked from the data side.
 
-## Round 7 — Montada French (#136): 2 findings
+## Round 7 — legacy issues triage + Montada French (#136)
 
-- **8:1 raw `<p>` tags**: `…Messager."</p><p>Craignez…` — paragraph
-  markup leaking into verse text (unique in the resource).
-- **9:92 unbalanced paren** (3 opens, 2 closes): leading `(Aucune
-  possibilité…` never closes.
-- Dialogue continuations after `!`/`?` (`"Si ! dit…`) are consistent
-  translator style — excluded.
+Montada French, 2 verified findings: raw `<p>` tags in 8:1
+(`…Messager."</p><p>Craignez…`) and unbalanced paren in 9:92
+(3 opens, 2 closes). Dialogue continuations are consistent style.
+
+Legacy open issues from 2020 re-verified live today:
+- **Fixed since**: #1175 (wbw فَعَلِمَ), #1176 (wbw رَحِمْتَهُ),
+  #1177 (wbw لَأَنزَلَ) — all correct in current API data.
+- **Still broken**: #1179 — Haleem 39:65 still reads
+  "one **if** the losers" (should be "one **of**"); #1182 — Malay
+  Basmeih 31:20 still reads "kepada **kami**" (should be "**kamu**").
+  Both are single-word content-team fixes with curl repros:
+  `…/verses/by_key/39:65?translations=85`,
+  `…/verses/by_key/31:20?translations=39`.
 
 ## Reproduce any finding
 
