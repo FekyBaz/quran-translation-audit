@@ -44,6 +44,22 @@ Deliberately excluded: Maududi's lowercase continuation style
 (`…us. and do not…`, `…you. nor can…`) — archaic but intentional;
 well-formed `<sup foot_note>` markers, which the API ships by design.
 
+## Round 2 — Russian Kuliev (#45) and Urdu Bayan-ul-Quran (#158)
+
+- **Russian 18:7 confirmed**: `…испытать людей ивыявить, чьи деяния…` —
+  missing space (`и выявить`). Full sweep of all 6,236 Russian verses
+  found no other bracket/case issues
+  ([issue](https://github.com/quran/quran.com-frontend-next/issues/3338)).
+  Note: fused-word typos need dictionary checking, which this tool does
+  not do — 18:7 was verified by hand.
+- **Urdu: structurally sound, with a documented convention.** Bayan-ul-Quran
+  commentary parentheses legitimately span verse boundaries (verified
+  pairing: the paren opened in 2:101 closes in 2:102; 36:19 balanced).
+  Automated per-verse bracket checks do NOT apply to this translation —
+  206 raw flags, all attributable to the convention. The
+  [quran_android#3789](https://github.com/quran/quran_android/issues/3789)
+  complaint concerns that app's own data pipeline, not this API's data.
+
 ## Reproduce any finding
 
 ```bash
