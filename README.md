@@ -83,6 +83,21 @@ ones (98:7 first word, 79:1 one of two words).
 - Otherwise clean: lowercase continuations are this translation's
   consistent style (not leaks), and no other bracket anomalies found.
 
+## Round 5 — French Hamidullah (#31) + Maududi surah-9 prefixes
+
+- **French, 6 verified findings**: `;.` double punctuation (2:33, which
+  also mixes straight-open/curly-close quotes), page-ref residue
+  (`266]` in 5:97, `[ 656]` in 25:32, `[ 1077]` in 95:2), bracket
+  mismatches (`( … ]` in 15:52 and 23:89). Lowercase continuations
+  after `...` and dialogue quotes are this translation's consistent
+  style — excluded (the checker now skips ellipsis boundaries).
+- **Maududi surah 9: all 129 verses carry a `[9:N]` reference prefix**
+  no other surah has. Either strip it or confirm intentional — verse
+  text should be translation only. Plus `,.` in 6:140.
+- Re-sweeps with the improved checker (H3 page-refs incl. single
+  digits, H4 double punctuation): Maududi 170 findings (40 H1/H2 as
+  before + 130 new-class, all accounted for), Russian still 0.
+
 ## Reproduce any finding
 
 ```bash
