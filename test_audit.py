@@ -49,6 +49,7 @@ class TestHeuristics(unittest.TestCase):
     def test_h3_pagenum_residue(self):
         self.assertEqual(check_h3_pagenum("Omniscient 266]."), ["266]"])
         self.assertEqual(check_h3_pagenum("normal [12] text."), [])
+        self.assertEqual(check_h3_pagenum("[9:1] They neither"), ["1]"])
 
     def test_h4_double_punct(self):
         self.assertEqual(check_h4_double_punct("ces noms;."), [";."])

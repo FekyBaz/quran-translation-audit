@@ -58,7 +58,7 @@ def check_h1(text):
 
 def check_h3_pagenum(text):
     """Stray page/cross-reference residue like `Omniscient 266]`."""
-    return re.findall(r"(?<!\[)\b\d{2,4}\]", text)
+    return re.findall(r"(?<!\[)\b\d{1,4}\]", text)
 
 
 def check_h4_double_punct(text):
