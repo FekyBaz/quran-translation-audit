@@ -40,6 +40,10 @@ def check_h1(text):
     """Lowercase sentence starts, ignoring known abbreviations."""
     hits = []
     for m in SENT_END.finditer(text):
+        # Ellipsis suspension ("...", "..", "…") legitimately continues
+        # lowercase (French Hamidullah style) — never a leak signature.
+        if text[:m.start()].rstrip().endswith(("..", "…")):
+            continue
         # word before the boundary: abbreviation?
         before = text[:m.start()].rstrip()
         prev = re.split(r"\s+", before)[-1].rstrip(".").lower() if before else ""
@@ -56,7 +60,7 @@ def check_h2(text):
     issues = []
     # Strip well-formed footnote markers first; whatever angle
     # brackets remain are tag residue (e.g. `_note="177265">2</sup>`).
-    cleaned = re.sub(r'<sup foot_note="\d+">\d+</sup>', '', text)
+    cleaned = re.sub(r'<sup foot_note=("?)\d+\1>\d+</sup>', '', text)
     if '<' in cleaned or '>' in cleaned:
         issues.append("angle-bracket residue outside footnote markers")
     for a, b in (("(", ")"), ("[", "]")):

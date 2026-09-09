@@ -26,6 +26,10 @@ class TestHeuristics(unittest.TestCase):
     def test_h1_ignores_abbreviations(self):
         self.assertEqual(check_h1("He said, e.g. this is fine."), [])
 
+    def test_h1_ellipsis_continuation(self):
+        self.assertEqual(check_h1("Il part... alors Allah sait."), [])
+        self.assertEqual(check_h1("Il part… alors Allah sait."), [])
+
     def test_h1_cyrillic(self):
         self.assertTrue(check_h1("Воистину, Мы сделали это. ивыявить лучшее."))
         self.assertEqual(check_h1("Сказал он, т.е. это пояснение."), [])
@@ -41,6 +45,11 @@ class TestHeuristics(unittest.TestCase):
         # Well-formed footnote markers must not flag.
         self.assertEqual(
             check_h2('Joseph said:<sup foot_note="178470">1</sup> "Go."'), [])
+
+    def test_h2_sup_tags_unquoted(self):
+        # Some resources (e.g. French Hamidullah) omit attribute quotes.
+        self.assertEqual(
+            check_h2('Voici le Livre.<sup foot_note=211623>1</sup>'), [])
 
 
 if __name__ == "__main__":
