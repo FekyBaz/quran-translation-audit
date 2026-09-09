@@ -107,6 +107,15 @@ the resource). Relevant to
 which requests adding this translation to the Android app — the API-side
 data is clean, so the addition is de-risked from the data side.
 
+## Round 7 — Montada French (#136): 2 findings
+
+- **8:1 raw `<p>` tags**: `…Messager."</p><p>Craignez…` — paragraph
+  markup leaking into verse text (unique in the resource).
+- **9:92 unbalanced paren** (3 opens, 2 closes): leading `(Aucune
+  possibilité…` never closes.
+- Dialogue continuations after `!`/`?` (`"Si ! dit…`) are consistent
+  translator style — excluded.
+
 ## Reproduce any finding
 
 ```bash
