@@ -1,0 +1,93 @@
+{
+ "meta": {
+  "date": "2026-09-10",
+  "qurancom_resource": 779,
+  "quranenc_key": "french_rashid",
+  "method": "normalized (footnote markers + whitespace stripped) comparison"
+ },
+ "identical": [],
+ "markup_or_space": 3364,
+ "real_changes": [
+  {
+   "verse_key": "2:186",
+   "quranenc_excerpt": "Que ceux de Mes serviteurs qui t’interrogent sur Moi sachent que Je suis tout proche et que J’exauce quiconque M’invoque sincèrement. Qu’ils suivent donc la voie du salut en se soumettant à Mes comman",
+   "qurancom_excerpt": "A ceux de Mes serviteurs qui t’interrogent sur Moi, réponds que Je suis tout proche, J’exauce quiconque M’invoque sincèrement. Qu’ils suivent donc la voie du salut en se soumettant à Mes commandements"
+  },
+  {
+   "verse_key": "2:276",
+   "quranenc_excerpt": "Allah fait toujours péricliter les profits de l’usure et fructifier l’aumône. Allah n'aime pas tout mécréant endurci vivant dans le péché.",
+   "qurancom_excerpt": "Allah fait toujours péricliter les profits de l’usure et fructifier l’aumône. Allah ne saurait aimer tout mécréant endurci vivant dans le péché."
+  },
+  {
+   "verse_key": "4:42",
+   "quranenc_excerpt": "Ceux qui auront rejeté la foi et désobéi au Messager souhaiteront, ce Jour-là, que la terre se referme sur eux[36]. Mais ils ne pourront rien dissimuler à Allah.",
+   "qurancom_excerpt": "Ceux qui auront rejeté la foi et désobéi aux Messagers souhaiteront, ce Jour-là, que la terre se referme sur eux<sup foot_note=204178>1</sup>. Mais ils ne pourront rien dissimuler à Allah."
+  },
+  {
+   "verse_key": "8:19",
+   "quranenc_excerpt": "Si vous avez réclamé le jugement d’Allah[9], Son jugement a maintenant été rendu. Et si vous mettez un terme à vos agissements, voilà qui est préférable pour vous. Si, en revanche, vous récidivez, Nou",
+   "qurancom_excerpt": "Si vous avez réclamé le jugement d’Allah<sup foot_note=204395>1</sup>, son jugement a maintenant été rendu. Et si vous mettez un terme à vos agissements, voilà qui est préférable pour vous. Si, en rev"
+  },
+  {
+   "verse_key": "9:126",
+   "quranenc_excerpt": "Ne voient-ils donc pas qu’ils sont éprouvés une ou deux fois chaque année ? Ils ne sont pourtant pas disposés à se repentir et à en tirer des leçons.",
+   "qurancom_excerpt": "Ne voient-ils donc pas qu’ils sont éprouvés une ou deux fois chaque année ? Ils ne sont pourtant pas disposés à se repentir et à en tirer des leçons ?"
+  },
+  {
+   "verse_key": "14:18",
+   "quranenc_excerpt": "Les œuvres de ceux qui ont renié leur Seigneur sont à l’image de cendres balayées par le vent un jour de tempête. Les impies ne tireront aucun profit des œuvres qu’ils auront accomplies. Peut-on être ",
+   "qurancom_excerpt": "Les œuvres de ceux qui ont renié leur Seigneur sont à l’image de cendres balayées par le vent un jour de tempête. Les impies ne tireront aucun profit des œuvres qu’ils auront accomplies ? Peut-on être"
+  },
+  {
+   "verse_key": "15:2",
+   "quranenc_excerpt": "Les mécréants regretteront un jour de ne pas avoir été musulmans.",
+   "qurancom_excerpt": "Les mécréants regretteront peut-être un jour de ne pas avoir été musulmans."
+  },
+  {
+   "verse_key": "21:24",
+   "quranenc_excerpt": "Ont-ils adopté des divinités en dehors de Lui ? Dis-leur : « Apportez vos preuves du bien-fondé de vos pratiques ! Voici le Livre de ma communauté et les Ecritures révélées aux nations qui l’ont précé",
+   "qurancom_excerpt": "Ont-ils adopté des divinités en dehors de Lui ? Dis-leur : « Apportez vos preuves du bien-fondé de vos pratiques ! Voici le Livre de ma communauté et les Ecritures révélées aux nations qui l’ont précé"
+  },
+  {
+   "verse_key": "21:43",
+   "quranenc_excerpt": "Ou bien auraient-ils des dieux en mesure de les protéger de Notre châtiment ? Ceux-ci sont pourtant incapables de se défendre eux-mêmes, ni de trouver une protection contre Nos rigueurs.",
+   "qurancom_excerpt": "Ou bien auraient-ils des dieux en mesure de les protéger de Notre châtiment ? Ceux-ci sont pourtant incapables de se défendre eux-mêmes, ni de trouver une protection contre Nos rigueurs ?"
+  },
+  {
+   "verse_key": "21:79",
+   "quranenc_excerpt": "Nous avons inspiré à Salomon un jugement équitable[13] et avons doté l’un et l’autre de sagesse et de science. A David, Nous avons soumis les montagnes et les oiseaux qui Nous glorifiaient en même tem",
+   "qurancom_excerpt": "Nous avons inspiré à Salomon un jugement équitable<sup foot_note=204757>1</sup> et avons doté l’un et l’autre de sagesse et de science. A David, Nous avons soumis les montagnes et les oiseaux qui Nous"
+  },
+  {
+   "verse_key": "27:43",
+   "quranenc_excerpt": "Seul le culte qu’elle vouait à d’autres qu’Allah la détournait de la vraie foi. Elle appartenait, en effet, à un peuple impie.",
+   "qurancom_excerpt": "Seul le culte qu’elle vouait à d’autres qu’Allah la détournait de la vraie foi ? Elle appartenait, en effet, à un peuple impie."
+  },
+  {
+   "verse_key": "31:11",
+   "quranenc_excerpt": "Telle est la création d’Allah. Montrez-Moi donc ce que ces divinités que vous adorez en dehors de Lui ont bien pu créer ! Mais les impies sont manifestement égarés.",
+   "qurancom_excerpt": "Telle est la création d’Allah. Montrez-Moi donc ce que ces divinités que vous adorez en dehors de Lui ont bien pu créer ? Mais les impies sont manifestement égarés."
+  },
+  {
+   "verse_key": "34:3",
+   "quranenc_excerpt": "Ceux qui ont rejeté la foi affirment : « L’Heure ne sonnera pas ! » Réponds-leur : « Au contraire, elle sonnera ! J’en jure par mon Seigneur. » Il connaît les mystères de l’univers et rien ne Lui écha",
+   "qurancom_excerpt": "Ceux qui ont rejeté la foi affirment : « L’Heure ne sonnera pas ! » Réponds-leur : « Au contraire, elle sonnera ! J’en jure par mon Seigneur qui connaît les mystères de l’univers et auquel rien n’écha"
+  },
+  {
+   "verse_key": "51:47",
+   "quranenc_excerpt": "Le ciel, Nous l’avons édifié par une force prodigieuse et Nous en avons largement le pouvoir[11].",
+   "qurancom_excerpt": "Le ciel, Nous l’avons édifié à l’aide d’une force prodigieuse et ne cessons de repousser ses limites<sup foot_note=205227>1</sup>."
+  },
+  {
+   "verse_key": "74:53",
+   "quranenc_excerpt": "N’est-ce pas plutôt qu’ils ne redoutent pas la Résurrection ?",
+   "qurancom_excerpt": "N’est-ce pas plutôt qu’ils ne redoutent pas la Résurrection."
+  },
+  {
+   "verse_key": "75:20",
+   "quranenc_excerpt": "C’est que vous êtes obnubilés par ce bas-monde",
+   "qurancom_excerpt": "C’est que vous êtes obnubilés par ce bas bas-monde"
+  }
+ ],
+ "identical_count": 2856
+}
